@@ -1,0 +1,101 @@
+/* p, h2 {
+    color: red;
+    width: 900px;
+  }
+  
+li {
+    color: blue;
+    width: 600px;
+    border: 1px solid black;
+  }
+  
+  h3 {
+      color: blue;
+  }*/
+  /* <link href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" rel="stylesheet" type="text/css"> */
+ 
+  html {
+    font-size: 12px; /* px signifie 'pixels': la taille de base pour la police est désormais 12 pixels de haut  */
+    font-family: "Verdana", sans-serif; /* cela devrait être le reste du résultat obtenu à partir de Google fonts */
+    color: #e2ae3e;
+    background-color: rgba(16, 54, 10, 0.993);
+}
+body {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    padding: 0 20px 20px 20px;
+    border: 10px solid black;
+  }
+
+  a {
+      color: rgb(255, 0, 0);
+  }
+  
+  a:hover {
+      color: rgb(255, 123, 0);
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    /* color: rgba(16, 54, 10, 0.993); */
+    text-shadow: 2px 2px 3px black;
+  }
+
+  h2, h3, h4 {
+    /* font-size: 21px; */
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: black;
+  }
+
+  p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+h2.titreListe {
+  text-align: left;
+}
+h3.liste {
+  text-align: left;
+}
+
+  ul.fox {
+    /* list-style-type: disc; */
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    /* list-style-type: decimal; */
+    /* list-style-type: georgian; */
+    /* list-style-type: trad-chinese-informal; */
+    /* list-style-type: kannada; */
+    /* list-style-type: inherit; */
+    /* list-style-type: initial; */
+    /* list-style-type: revert; */
+    /* list-style-type: unset; */
+    /* list-style-type: '- '; */
+    list-style-type: '🦊 ';
+    /* list-style-type: '👉🏼 '; */
+    /* list-style-type: none; */
+  }
+
+  ul.circle {
+    list-style-type: circle;
+    /* list-style-position: inherit; */
+  }
+
+  ol.lower {
+    list-style: lower-alpha;
+  }
+
+  ol.upper {
+    list-style: upper-alpha;
+  }

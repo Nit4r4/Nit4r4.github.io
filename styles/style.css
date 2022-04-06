@@ -54,6 +54,7 @@ body {
     display: block;
     margin: 0 auto;
     box-shadow: black;
+    box-sizing: border-box;
   }
 
   p, li {
@@ -99,8 +100,14 @@ h3.liste {
   ol.upper {
     list-style: upper-alpha;
   }
-
+  
   iframe.videoYouTube {
+    display: block;
+    margin: 0 auto;
+    box-shadow: black; 
+  }
+  
+  iframe.googleMap {
     display: block;
     margin: 0 auto;
     box-shadow: black; 

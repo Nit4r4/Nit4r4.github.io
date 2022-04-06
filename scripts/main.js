@@ -15,6 +15,23 @@ myImage.addEventListener('click', function() {
       myImage.setAttribute('src', 'img/fox.png');
     }
 });
-<video src="https://www.youtube.com/watch?v=K30yHXasgMM" width="320" height="240" controls>
-Video not supported
-</video>
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+  let myName = prompt('Veuillez saisir votre nom.');
+  localStorage.setItem('nom', myName);
+  myHeading.textContent = 'Bienvenue sur la page,  ' + myName;
+}
+
+if (!localStorage.getItem('nom')) {
+    setUserName();
+  } else {
+    let storedName = localStorage.getItem('nom');
+    myHeading.textContent = 'Bienvenue sur la page,  ' + storedName;
+  }
+
+  myButton.addEventListener('click', function() {
+    setUserName();
+  });

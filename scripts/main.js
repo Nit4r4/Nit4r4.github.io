@@ -10,7 +10,7 @@ let myImage = document.querySelector('img');
 myImage.addEventListener('click', function() {
     let mySrc = myImage.getAttribute('src');
     if (mySrc === 'img/fox.png') {
-      myImage.setAttribute('src', 'img/foxzoom.png');
+      myImage.setAttribute('src', 'img/foxback.jpg');
     } else {
       myImage.setAttribute('src', 'img/fox.png');
     }

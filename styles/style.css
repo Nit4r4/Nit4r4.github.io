@@ -51,6 +51,7 @@ body {
   }
 
   img {
+    height: 700;
     display: block;
     margin: 0 auto;
     box-shadow: black;
@@ -98,4 +99,10 @@ h3.liste {
 
   ol.upper {
     list-style: upper-alpha;
+  }
+
+  iframe.videoYouTube {
+    display: block;
+    margin: 0 auto;
+    box-shadow: black; 
   }

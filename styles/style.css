@@ -13,21 +13,39 @@ li {
       color: blue;
   }*/
   /* <link href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" rel="stylesheet" type="text/css"> */
- 
+ @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
   html {
     font-size: 12px; /* px signifie 'pixels': la taille de base pour la police est désormais 12 pixels de haut  */
     font-family: "Verdana", sans-serif; /* cela devrait être le reste du résultat obtenu à partir de Google fonts */
     color: #e2ae3e;
-    background-color: rgba(16, 54, 10, 0.993);
+    background-color: rgba(47, 92, 5, 0.993);
 }
+
 body {
-    width: 950px;
+    width: 1000px;
     margin: 0 auto;
     background-color: #fdfdfd;
     padding: 0 20px 20px 20px;
-    border: 10px solid black;
+    /* border: 10px solid black; */
+    transition: 0.2s linear;
+    font-family: 'Dosis', sans-serif;
+    color: #e29b01;
   }
 
+main {
+margin: 3rem auto 0;
+width: 550px;
+background: #4f8f0a; 
+padding: 1rem 2rem 2rem;
+box-shadow: 1px 2px 6px #333;
+border-radius: 4px;
+}
+
+.img {
+  background: url(.img/bb.jpg) no-repeat 100%/ cover;
+  height: 280px;
+  border-radius: 4px;
+}
   a {
       color: rgb(255, 0, 0);
   }
@@ -55,6 +73,12 @@ body {
     margin: 0 auto;
     box-shadow: black;
     box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  .sep {
+    width: 720px;
+    height: auto;
   }
 
   p, li {
@@ -105,10 +129,93 @@ h3.liste {
     display: block;
     margin: 0 auto;
     box-shadow: black; 
+    border-radius: 8px;
+    box-shadow: 0 0 6px #333;
   }
   
   iframe.googleMap {
     display: block;
     margin: 0 auto;
-    box-shadow: black; 
+    border-radius: 8px;
+    box-sizing: content-box;
+    box-shadow: 0 0 6px #333;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .bouton {
+    position: absolute;
+    top: 1rem;
+    right: 12rem;
+    font-family: 'Dosis';
+    font-size: medium;
+    font-style: bold;
+    color: rgba(47, 92, 5, 0.993);
+    background-color: white;
+    box-shadow: 1px 2px 1px #333;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    transform: scale(1.1);
+  }
+
+  .label {
+    height: 24px;
+    width: 50px;
+    background: white;
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #e2ae3e;
+  }
+
+  .label .ball {
+    background: #e2ae3e;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    transform: translateX(0);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(29px);
+  }
+
+  .fa-moon {
+    color: #333;
+  }
+
+  /* DARK MODE */
+  .dark {
+    background: #333;
+  }
+
+  .dark main {
+    background: #333;
+  }
+
+  .dark .label {
+    box-shadow: 2px 1px 1px #333;
+    background: rgb(245, 245, 245);
+  }
+
+  .dark .ball {
+    background: #333;
   }

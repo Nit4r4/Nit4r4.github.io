@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ma page de test</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Ma page de test</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+</head>
+<body>
 
-  <div id="Titres">
-    <h1>Un renard curieux</h1>
-    <h2>Clique sur l'image...</h2>
+<div class="toggle">
+  <!-- c'est comme ca que l'input et le label sont relies -->
+  <input type="checkbox" class="checkbox" id="dark-mode" />
+  <label for="dark-mode" class="label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <div class="ball"></div>
+  </label> 
+</div>
+<div id="Titres">
+  <h1>Un renard curieux</h1>
+  <h2>Clique sur l'image...</h2>
+  <div class="image" id="Images">
     <img src="img/fox.png" alt="Un renard dissimule dans un buisson qui regarde vers nous">
-    <h3>Par Nitara Nya</h3>
-    <h4><em>Apprentie Dev Front qui crée une page en HTML avec des styles en CSS et du JS</em></h4>
   </div>
+  <h3>Par Nitara Nya</h3>
+  <h4><em>Apprentie Dev Front qui crée une page en HTML avec des styles en CSS et du JS</em></h4>
+</div>
 
-  <div id="Listes">
-    <h2 class="titreListe"><p>Des listes non ordonnées de coucou :</p></h2>
-   
-    <h3 class="liste">Liste 1</h3>
-    <ul class="fox">
-        <li>coucou1</li>
-        <li>coucou2</li>
-        <li>coucou3</li>
-    </ul>
-
-    <br><h3 class="liste">Liste 2</h3>
-    <ul class="circle">
+<div id="Listes">
+  <h2 class="titreListe"><p>Des listes non ordonnées de coucou :</p></h2>
+  
+  <h3 class="liste">Liste 1</h3>
+  <ul class="fox">
       <li>coucou1</li>
       <li>coucou2</li>
       <li>coucou3</li>
   </ul>
 
-    <p>qui contient des <strong>images</strong> devant les mots !</p>
-    <h2 class="titreListe"><p>Des listes ordonnées de salut :</p></h2>
+  <br><h3 class="liste">Liste 2</h3>
+  <ul class="circle">
+    <li>coucou1</li>
+    <li>coucou2</li>
+    <li>coucou3</li>
+</ul>
 
-    <h3 class="liste">Liste 1</h3>
-    <ol>
-        <li>salut1</li>
-        <li>salut2</li>
-        <li>salut3</li>
-    </ol>
+  <p>qui contient des <strong>images</strong> devant les mots !</p>
+  <h2 class="titreListe"><p>Des listes ordonnées de salut :</p></h2>
 
-    <br><h3 class="liste">Liste 2</h3>
-    <ol class="lower">
-        <li>salut1</li>
-        <li>salut2</li>
-        <li>salut3</li>
-    </ol>
+  <h3 class="liste">Liste 1</h3>
+  <ol>
+      <li>salut1</li>
+      <li>salut2</li>
+      <li>salut3</li>
+  </ol>
 
-    <br><h3 class="liste">Liste 3</h3>
-    <ol class="upper">
-        <li>salut1</li>
-        <li>salut2</li>
-        <li>salut3</li>
-    </ol>
+  <br><h3 class="liste">Liste 2</h3>
+  <ol class="lower">
+      <li>salut1</li>
+      <li>salut2</li>
+      <li>salut3</li>
+  </ol>
 
-    <p>qui contient donc des <strong>chiffres</strong> devant les mots !</div>
-      <div id="MiseEnPage">
-        <img src="img/sep.png" alt="Un separateur de texte en decoration">
-        <iframe class="videoYouTube" width="640" height="426" src="https://www.youtube.com/embed/K30yHXasgMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- <video <embed type="video/youtube" src="https://www.youtube.com/watch?v=K30yHXasgMM" width="640" height="480" title="Video de renard">
-          controls>
-          Video not supported
-          </video> -->
-    <p>Aussi, je vais essayer d'ecrire un peu plus de texte afin de tester les saut de ligne : <br><br>Normalement je devrais avoir deux sauts de ligne <em>avant</em> ce texte et un seul <em>apres</em>.<br><strong>Apparement ca fonctionne !</p>
-    </strong></p>
-    </div>
+  <br><h3 class="liste">Liste 3</h3>
+  <ol class="upper">
+      <li>salut1</li>
+      <li>salut2</li>
+      <li>salut3</li>
+  </ol>
 
-    <div id="Map">
-      <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.5456401589877!2d7.061382550601371!3d46.279133186614956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ebfcaaf636f45%3A0xc1c5cfb605db9b7f!2sRte%20des%20Renards%2C%201882%20Gryon!5e0!3m2!1sfr!2sch!4v1649257331917!5m2!1sfr!2sch" width="640" height="426" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div id="Lien">
-    <p>Cliquer sur le lien suivant : <a href="https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/HTML_basics">Les Bases du HTML</a> pour comprendre comment cette page à été crée !</p>
+  <p>qui contient donc des <strong>chiffres</strong> devant les mots !</div>
+    <div id="MiseEnPage">
+      <img class="sep" src="img/sep.png" alt="Un separateur de texte en decoration">
+      <iframe class="videoYouTube" width="640" height="426" src="https://www.youtube.com/embed/K30yHXasgMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <video <embed type="video/youtube" src="https://www.youtube.com/watch?v=K30yHXasgMM" width="640" height="480" title="Video de renard">
+        controls>
+        Video not supported
+        </video> -->
+  <p>Aussi, je vais essayer d'ecrire un peu plus de texte afin de tester les saut de ligne : <br><br>Normalement je devrais avoir deux sauts de ligne <em>avant</em> ce texte et un seul <em>apres</em>.<br><strong>Apparement ca fonctionne !</p>
+  </strong></p>
   </div>
-  
-  <button>Changer d'utilisateur</button>
-  <script src="scripts/main.js"></script>
+
+  <div id="Map">
+    <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.5456401589877!2d7.061382550601371!3d46.279133186614956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ebfcaaf636f45%3A0xc1c5cfb605db9b7f!2sRte%20des%20Renards%2C%201882%20Gryon!5e0!3m2!1sfr!2sch!4v1649257331917!5m2!1sfr!2sch" width="640" height="426" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div id="Lien">
+  <p>Cliquer sur le lien suivant : <a href="https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/HTML_basics">Les Bases du HTML</a> pour comprendre comment cette page à été crée !</p>
+</div>
+
+<button class="bouton" id="user">Changer d'utilisateur</button>
+<script src="scripts/main.js"></script>
 </body>
 </html>
